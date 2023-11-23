@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+body{
+    background: #1f1414;
+    color: #aca4a4;
+    font-family: serif;
+    font-size: larger;
+    animation: backclr 7s ; animation-iteration-count: infinite;
+    overflow-x: hidden;
+}
+
+@keyframes backclr{
+    0% {background-color: rgb(24, 13, 13);}
+    50% {background-color: rgb(15, 11, 11);}
+    100% {background-color: rgb(24, 13, 13);}
+}
+
+
+header{
+    background: #0000008e;
+    padding: 3em;
+    border-radius: 6px 28px;
+    width: 550px;
+    text-shadow: 2px 2px 2px #7c0404;
+    box-shadow: 2px 2px #7c480456;
+    text-transform: uppercase;
+    animation: toemergetwo 3s ease-in;
+}
+
+.card1 img{
+    border-radius: 30px 6px;
+    margin: 0em;
+    position: absolute;
+    left: 38em;
+    opacity: 30%;
+    top: 0.5em;
+    box-shadow: 12px 12px 12px 12px #000;
+    animation: toemerge 1.5s ease-in-out;
+    
+
+}
+
+.text1 p{
+    width: 400px;
+    margin-left: 3.8em;
+    margin-top: 2em;
+    background: #0000002d;
+    padding: 3em;
+    border-radius: 10px 90px 90px 10px;
+    text-shadow: 2px 2px 2px #ffffff46;
+    box-shadow: 2px 2px 2px #7c480456;
+    animation: toemerge 2s ease-in-out;
+}
+
+
+
+.card2 img{
+    border-radius: 30px 6px;
+    margin: 3.5em;
+    position: absolute;
+    opacity: 30%;
+    filter: sepia(50%);
+    left: -2.5em;
+    box-shadow: 12px 12px 12px 12px #000;
+    animation: toemerge 2s ease-in-out;
+}
+
+.text2 p{
+    width: 500px;
+    margin-left: 35em;
+    margin-top: 4em;
+    background: #0000002d;
+    padding: 3em;
+    border-radius: 90px 10px 10px 90px;
+    text-shadow: 2px 2px 2px  #ffffff46;
+    box-shadow: -2px 1px 1px 1px  #7c480456;
+    animation: toemerge 1.5s ease-in-out;
+}
+
+
+.card3 img{
+    position: absolute;
+    margin: 3.5em;
+    left: 5em;
+    filter: sepia(70%);
+    top: 1em;
+    border-radius: 60px 6px;
+    box-shadow: -5px 5px 5px 5px #5c595973;
+    
+}
+
+.card3{
+    margin: 5em;
+    position: absolute;
+    background: rgba(24, 15, 15, 0.26);
+    padding: 6em;
+    width: 1200px;
+    height: 800px;
+    border-radius: 30px 1px;
+    box-shadow: 70px 70px 70px #ffffff;
+}
+
+.card3 p{
+    position: absolute;
+    justify-content: center;
+    top: 40em ;
+    left: 6em;
+    width: 900px;
+    text-justify: left;
+    text-shadow: 2px 2px 2px #ffffff46;
+    
+}
+
+
+.text1 p:hover{
+    transform: translateY(10px);
+}
+.text2 p:hover{
+    transform: translateY(10px);
+}
+
+.card1 img:hover{
+    transform: translateY(15px);
+}
+.card2 img:hover{
+    transform: translateY(15px);
+}
+.card3 img:hover{
+    transform: translateY(15px);
+}
+
+@media all and (max-width: 760px) {
+    .text1 p{
+        margin: 20px;
+        width: 250px;
+        position: absolute;
+        left: -2em;
+    }
+    .card1 img{
+        margin: 20px;
+        left: 0;
+        top: 29em;
+        width: 350px;
+        height: 300px;
+    }
+
+
+    .text2 p{
+        margin: 20px;
+        width: 250px;
+        position: absolute;
+        bottom: -54em;
+    }
+    .card2 img{
+        margin: 20px;
+        width: 350px;
+        height: 300px;
+        position: absolute;
+        bottom: -76em;
+        left: 0;
+    }
+
+
+    .card3{
+       position: absolute;
+       bottom: -117em;
+       left: -10.5em;
+       box-shadow: none;
+    }
+    .card3 img{
+        margin: 20px;
+        left: 0;
+        top: 24em;
+        width: 380px;
+        position: absolute;
+        left: 4em;
+        border-radius: 0px 0px 0px 0px;
+    }
+    .card3 p{
+        margin: 20px;
+        width: 300px;
+    }
+
+    .inf{
+        position: absolute;
+        bottom: -63em;
+    }
+    
+
+}
+
+@keyframes toemerge{
+    from{
+        opacity: 0;
+        translate: -100vw 0;
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes toemergetwo{
+    from{
+        opacity: 0;
+        translate: -100vh 0;
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: -80.9em;
+    margin: 2em;
+    background: rgb(20, 13, 13);
+    padding: 2em;
+    margin-left: -1em;
+    width: 1360px;
+}
+
